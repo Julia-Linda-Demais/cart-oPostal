@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Fonte;
+  src: url(../fontes/brocs___.TTF) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffcbcbc5 url('/img/maes.jpg') no-repeat center/cover;
+  padding: 20px;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Fonte", sans-serif;
+  font-size: clamp(32px, 10vw, 64px);
+  color: #823d3d;
+  margin-bottom: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff8c;
+  border-radius: 20px;
+  padding: 32px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 2px dashed rgb(82, 32, 13);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  font-size: clamp(20px, 5vw, 28px);
+  color: #b25b5b;
+  font-weight: 600;
+}
+
+.div_fotos img {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #d88a8a;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+  gap: 8px;
+}
+
+.buttons button {
+  padding: 12px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  background: #e4bebe;
+  color: #4a2a2a;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.buttons button:hover {
+  transform: translateY(-2px);
+  background: #dba7a7;
+}
+
+.buttons button:active {
+  transform: translateY(0);
+  background: #c98d8d;
+}
+
+p {
+  font-size: clamp(16px, 4vw, 22px);
+  color: #181818;
+}
